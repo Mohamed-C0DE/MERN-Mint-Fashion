@@ -5,8 +5,8 @@ import Offers from "../components/offers";
 const homepage = () => {
   return (
     <Fragment>
-      <Header />
       <Offers />
+      <Header />
     </Fragment>
   );
 };
