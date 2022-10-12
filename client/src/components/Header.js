@@ -38,9 +38,7 @@ const Header = () => {
             </svg>
           </button>
           <a href="#" className="flex items-center">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              MINT
-            </span>
+            <span className="self-center text-2xl whitespace-nowrap">MINT</span>
           </a>
           <div className="flex items-center md:order-2">
             <a href="https://flowbite.com/">
