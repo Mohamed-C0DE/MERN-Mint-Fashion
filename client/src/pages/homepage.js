@@ -1,11 +1,23 @@
 import { useState, useEffect, Fragment } from "react";
+import axios from "axios";
 import Header from "../components/header";
 import Offers from "../components/offers";
 
-const homepage = () => {
-  // const [products, setProducts] = useState([]);
+const Homepage = () => {
+  const [products, setProducts] = useState([]);
 
-  // useEffect(() => {}, []);
+  useEffect(() => {
+    axios
+      .get("http://localhost:8000/")
+      .then((res) => {
+        setProducts(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <Fragment>
       <Offers />
@@ -234,4 +246,4 @@ const homepage = () => {
   );
 };
 
-export default homepage;
+export default Homepage;
