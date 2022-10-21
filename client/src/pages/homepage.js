@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Header from "../components/header";
 import Offers from "../components/offers";
 import BestSeller from "../components/bestSeller";
+import LineBreak from "../UI/LineBreak";
 
 const Homepage = () => {
   return (
@@ -23,6 +24,7 @@ const Homepage = () => {
         </div>
       </section>
       <BestSeller />
+      <LineBreak />
     </Fragment>
   );
 };
