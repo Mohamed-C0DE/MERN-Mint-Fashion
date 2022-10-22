@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Header from "../components/header";
 import Offers from "../components/offers";
 import BestSeller from "../components/bestSeller";
+import Categories from "../components/categories";
 import LineBreak from "../UI/LineBreak";
 
 const Homepage = () => {
@@ -25,6 +26,7 @@ const Homepage = () => {
       </section>
       <BestSeller />
       <LineBreak />
+      <Categories />
     </Fragment>
   );
 };
