@@ -1,4 +1,4 @@
-import { useState, useEffect, Fragment } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 const BestSeller = () => {
@@ -23,7 +23,7 @@ const BestSeller = () => {
     if (product.bestSeller) {
       return (
         <div
-          className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+          className="max-w-fit bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
           key={product._id}
         >
           <a href="#">
@@ -74,14 +74,12 @@ const BestSeller = () => {
   });
 
   return (
-    <div>
+    <div className="w-5/6 min-w-fit mx-auto flex justify-center flex-col">
       <h2 className="text-center text-2xl pt-2">Best Sellers</h2>
 
       {displayProducts ? (
-        <div className="w-5/6 mx-auto flex justify-center">
-          <div className="grid justify-center grid-cols-1 md:grid-cols-2 md:gap-2 xl:grid-cols-4">
-            {bestSellersList}
-          </div>
+        <div className="grid justify-center grid-cols-1 md:grid-cols-2 gap-4 xl:grid-cols-4">
+          {bestSellersList}
         </div>
       ) : (
         <p className="text-center fs-4">Loading...</p>
