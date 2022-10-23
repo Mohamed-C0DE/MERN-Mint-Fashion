@@ -27,6 +27,7 @@ const Homepage = () => {
       <BestSeller />
       <LineBreak />
       <Categories />
+      <LineBreak />
     </Fragment>
   );
 };
