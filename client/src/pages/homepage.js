@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Offers from "../components/offers";
 import BestSeller from "../components/bestSeller";
 import Categories from "../components/categories";
+import Story from "../components/story";
 import LineBreak from "../UI/LineBreak";
 
 const Homepage = () => {
@@ -28,6 +29,7 @@ const Homepage = () => {
       <LineBreak />
       <Categories />
       <LineBreak />
+      <Story />
     </Fragment>
   );
 };
