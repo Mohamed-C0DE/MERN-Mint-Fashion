@@ -5,6 +5,7 @@ import BestSeller from "../components/bestSeller";
 import Categories from "../components/categories";
 import Story from "../components/story";
 import LineBreak from "../UI/LineBreak";
+import Footer from "../components/footer";
 
 const Homepage = () => {
   return (
@@ -30,7 +31,7 @@ const Homepage = () => {
       <Categories />
       <LineBreak />
       <Story />
-      <LineBreak />
+      <Footer />
     </Fragment>
   );
 };
