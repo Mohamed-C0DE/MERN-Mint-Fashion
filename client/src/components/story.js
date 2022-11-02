@@ -2,7 +2,7 @@ import React from "react";
 
 const Story = () => {
   return (
-    <section className="w-5/6 max-w-fit mx-auto flex justify-center flex-col">
+    <section className="w-5/6 max-w-fit mx-auto mb-2 flex justify-center flex-col">
       <h2 className="text-center text-2xl pb-2">Our Story</h2>
       <div className="flex flex-col lg:flex-row">
         <img
