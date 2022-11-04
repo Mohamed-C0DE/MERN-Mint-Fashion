@@ -31,14 +31,14 @@ const BestSeller = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                 {product.name}
               </h5>
             </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal text-gray-700 text-lg">
               <span className="inline-block">
                 <svg
-                  className="w-3 mr-2"
+                  className="w-3 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
                 >
@@ -48,7 +48,7 @@ const BestSeller = () => {
               {product.rating}
             </p>
             <div className="flex justify-between content-center">
-              <p className=" font-normal text-gray-700 flex items-center">
+              <p className=" font-normal text-lg text-gray-700 flex items-center">
                 ${product.price}
               </p>
               <a
@@ -75,14 +75,14 @@ const BestSeller = () => {
 
   return (
     <div className="w-5/6 min-w-fit mx-auto flex justify-center flex-col">
-      <h2 className="text-center text-2xl pt-2">Best Sellers</h2>
+      <h2 className="text-center text-xl lg:text-2xl pt-2">Best Sellers</h2>
 
       {displayProducts ? (
-        <div className="grid justify-center grid-cols-1 md:grid-cols-2 gap-4 xl:grid-cols-4">
+        <div className="grid justify-center grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-4">
           {bestSellersList}
         </div>
       ) : (
-        <p className="text-center fs-4">Loading...</p>
+        <p className="text-center text-lg lg:text-xl pt-2">Loading...</p>
       )}
     </div>
   );
