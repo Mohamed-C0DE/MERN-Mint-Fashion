@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full mx-auto p-4 bg-slate-50">
+    <footer className="w-full mx-auto py-2 lg:py-4 bg-slate-50">
       <div className="w-5/6 mx-auto flex items-center justify-between">
         <span className="text-lg text-gray-500 sm:text-center">
           © 2022{" "}
@@ -39,7 +39,7 @@ const Footer = () => {
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
-              className="w-6 h-6"
+              className="w-6"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
