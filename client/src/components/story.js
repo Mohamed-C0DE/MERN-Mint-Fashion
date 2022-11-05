@@ -10,7 +10,7 @@ const Story = () => {
           src="https://images.unsplash.com/photo-1620799139834-6b8f844fbe61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1866&q=80"
           alt=""
         />
-        <p className="pt-2 lg:pt-0 lg:w-1/2 lg:pl-3 md:text-lg">
+        <p className="pt-2 lg:pt-0 lg:w-1/2 lg:pl-3 md:text-lg xl:text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
           pellentesque erat non odio commodo, sit amet lobortis arcu molestie.
           Praesent mattis lorem id magna ultricies mattis. Curabitur posuere
